@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>github_hexo博客创建 | TreeioView</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="github_hexo博客创建 | TreeioView">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="GitHub博客创建一、需要安装的软件1、Node.js下载https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v4.2.3&#x2F;node-v4.2.3-x64.msi（教学版本） https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F;（最新版本） 【它让JavaScript成为与PHP、Python、Perl、Ruby等服务端语言平起平坐的脚本语言。】 安装教程：https:&#x2F;&#x2F;www.cnbl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="github_hexo博客创建">
+<meta property="og:url" content="http://example.com/2022/05/10/github_hexo%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/index.html">
+<meta property="og:site_name" content="TreeioView">
+<meta property="og:description" content="GitHub博客创建一、需要安装的软件1、Node.js下载https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v4.2.3&#x2F;node-v4.2.3-x64.msi（教学版本） https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F;（最新版本） 【它让JavaScript成为与PHP、Python、Perl、Ruby等服务端语言平起平坐的脚本语言。】 安装教程：https:&#x2F;&#x2F;www.cnbl">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-05-10T11:14:47.803Z">
+<meta property="article:modified_time" content="2022-05-10T11:24:44.299Z">
+<meta property="article:author" content="TreeioView">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/favicon.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.png"/>
+</a>
+<div class="author">
+    <span>TreeioView</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(4)</small>
+            
+        </div>
+    </li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="4">
+<input type="hidden" id="yelog_site_word_count" value="2.1k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All "
+           href="/2022/05/10/github_hexo%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="github_hexo博客创建">github_hexo博客创建</span>
+            <span class="post-date" title="2022-05-10 19:14:47">2022/05/10</span>
+        </a>
+        
+        <a  class="All "
+           href="/2022/05/10/github_ppet/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="github_ppet">github_ppet</span>
+            <span class="post-date" title="2022-05-10 19:14:47">2022/05/10</span>
+        </a>
+        
+        <a  class="All "
+           href="/2022/05/10/github_hexo%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="github_hexo主题美化">github_hexo主题美化</span>
+            <span class="post-date" title="2022-05-10 19:14:47">2022/05/10</span>
+        </a>
+        
+        <a  class="All "
+           href="/2022/05/08/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2022-05-08 18:44:06">2022/05/08</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-github_hexo博客创建" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">github_hexo博客创建</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2022-05-10 19:24:44'>2022-05-10 19:14</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:459</span>
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA"><span class="toc-text">GitHub博客创建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="toc-text">一、需要安装的软件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81Node-js%E4%B8%8B%E8%BD%BD"><span class="toc-text">1、Node.js下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81Git%E4%B8%8B%E8%BD%BD"><span class="toc-text">2、Git下载</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%90%8E%E7%BB%AD%E6%93%8D%E4%BD%9C"><span class="toc-text">二、后续操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%9C%A8cmd%E7%AB%AF"><span class="toc-text">1、在cmd端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7"><span class="toc-text">2、拥有一个github账号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E5%9C%A8Git-Bath%E7%AB%AF"><span class="toc-text">3、在Git Bath端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E6%89%93%E5%BC%80Git-Bath"><span class="toc-text">（1）打开Git Bath</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E5%9C%A8Git-Bath%E7%AB%AF%E8%BE%93%E5%85%A5"><span class="toc-text">（2）在Git Bath端输入</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E6%A0%B9%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6"><span class="toc-text">（3）修改博客根目录文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E5%9C%A8Git-Bath%E7%AB%AF%E8%BE%93%E5%85%A5"><span class="toc-text">（4）在Git Bath端输入</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%B5%84%E6%96%99%E6%9D%A5%E6%BA%90%E4%BA%8E%EF%BC%9A%E3%80%902021%E6%9C%80%E6%96%B0%E7%89%88%E3%80%91%E4%BF%9D%E5%A7%86%E7%BA%A7Hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9-bilibili"><span class="toc-text">资料来源于：【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%885%EF%BC%89Hexo%E6%8C%87%E4%BB%A4"><span class="toc-text">（5）Hexo指令</span></a></li></ol></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="GitHub博客创建"><a href="#GitHub博客创建" class="headerlink" title="GitHub博客创建"></a>GitHub博客创建</h1><h2 id="一、需要安装的软件"><a href="#一、需要安装的软件" class="headerlink" title="一、需要安装的软件"></a>一、需要安装的软件</h2><h3 id="1、Node-js下载"><a href="#1、Node-js下载" class="headerlink" title="1、Node.js下载"></a>1、Node.js下载</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi%EF%BC%88%E6%95%99%E5%AD%A6%E7%89%88%E6%9C%AC%EF%BC%89">https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi（教学版本）</a></p>
+<p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/%EF%BC%88%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%EF%BC%89">https://nodejs.org/en/download/（最新版本）</a></p>
+<p>【它让JavaScript成为与PHP、Python、Perl、Ruby等服务端语言平起平坐的脚本语言。】</p>
+<p>安装教程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/liuqiyun/p/8133904.html">https://www.cnblogs.com/liuqiyun/p/8133904.html</a></p>
+<p>其他的nodejs教程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/huanhao/p/hexobase.html">https://www.cnblogs.com/huanhao/p/hexobase.html</a></p>
+<h3 id="2、Git下载"><a href="#2、Git下载" class="headerlink" title="2、Git下载"></a>2、Git下载</h3><p><a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.11.0.windows.3/Git-2.11.0.3-64-bit.exe">https://github.com/git-for-windows/git/releases/download/v2.11.0.windows.3/Git-2.11.0.3-64-bit.exe</a></p>
+<p>【Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理】</p>
+<p>安装教程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p>
+<h2 id="二、后续操作"><a href="#二、后续操作" class="headerlink" title="二、后续操作"></a>二、后续操作</h2><h3 id="1、在cmd端"><a href="#1、在cmd端" class="headerlink" title="1、在cmd端"></a>1、在cmd端</h3><p>win+R，输入cmd进入cmd端口</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">node -v <span class="comment">#检查nodejs版本</span></span><br><span class="line">npm -v <span class="comment">#检查npm版本</span></span><br><span class="line">git --version <span class="comment">#检查git版本</span></span><br><span class="line">npm install hexo-cli -g <span class="comment">#Hexo下载</span></span><br><span class="line">hexo -v <span class="comment">#检查hexo版本</span></span><br></pre></td></tr></table></figure>
+
+<p>在cmd端口跳转到指定文件夹位置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /d file_place</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、拥有一个github账号"><a href="#2、拥有一个github账号" class="headerlink" title="2、拥有一个github账号"></a>2、拥有一个github账号</h3><p>github账号注册：<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5107169/">https://www.bilibili.com/read/cv5107169/</a></p>
+<h3 id="3、在Git-Bath端"><a href="#3、在Git-Bath端" class="headerlink" title="3、在Git Bath端"></a>3、在Git Bath端</h3><h4 id="（1）打开Git-Bath"><a href="#（1）打开Git-Bath" class="headerlink" title="（1）打开Git Bath"></a>（1）打开Git Bath</h4><p>方法一：在cmd端口打开Git Bath：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start <span class="string">&quot;Open Git Bash&quot;</span> <span class="string">&quot;%SYSTEMDRIVE%\Program Files\Git\git-bash.exe&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>方法二：对目标文件夹用鼠标右键点击，选择“Git Bath Here”</p>
+<h4 id="（2）在Git-Bath端输入"><a href="#（2）在Git-Bath端输入" class="headerlink" title="（2）在Git Bath端输入"></a>（2）在Git Bath端输入</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;邮箱地址&quot;</span>   <span class="comment">#生成ssh</span></span><br><span class="line">ssh -T git@github.com     	 	<span class="comment">#测试ssh是否绑定成功</span></span><br><span class="line"></span><br><span class="line">hexo init 		<span class="comment">#初始化hexo博客</span></span><br><span class="line">hexo s 			<span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure>
+
+<p>安装hexo-deployer-git自动部署发布工具：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h6 id=""><a href="#" class="headerlink" title=""></a></h6><h4 id="（3）修改博客根目录文件"><a href="#（3）修改博客根目录文件" class="headerlink" title="（3）修改博客根目录文件"></a>（3）修改博客根目录文件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">根目录的D:\Blog\GitHubBlog\_config.yml：</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/TreeioView/TreeioView.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<h4 id="（4）在Git-Bath端输入"><a href="#（4）在Git-Bath端输入" class="headerlink" title="（4）在Git Bath端输入"></a>（4）在Git Bath端输入</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g 	<span class="comment">#生成</span></span><br><span class="line">hexo d	<span class="comment">#本地文件上传到GitHub仓库</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="资料来源于：【2021最新版】保姆级Hexo-github搭建个人博客-哔哩哔哩-bilibili"><a href="#资料来源于：【2021最新版】保姆级Hexo-github搭建个人博客-哔哩哔哩-bilibili" class="headerlink" title="资料来源于：【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili"></a>资料来源于：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.999.0.0">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a></h6><h4 id="（5）Hexo指令"><a href="#（5）Hexo指令" class="headerlink" title="（5）Hexo指令"></a>（5）Hexo指令</h4><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">指令 | Hexo</a></p>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2022-TreeioView
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":180,"height":390},"mobile":{"show":true,"scale":0.5},"rect":{"opacity":0.7},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    #post {
+        background: url(/img/backgarden.jfif);
+    }
+    
+    
+    #post .index {
+        background: url(/img/backgarden.jfif);
+    }
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/backgarden.jfif");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
