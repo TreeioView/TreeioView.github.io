@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TreeioView</title>
+  <title>python_实用操作 | TreeioView</title>
   <meta name="keywords" content="">
-  <meta name="description" content="TreeioView">
+  <meta name="description" content="python_实用操作 | TreeioView">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="适用 快捷键    visual studio，typora ctrl+f 查找   cmd cd &#x2F;d file_place 跳转到指定文件夹位置   文件夹 鼠标中键“在CMD中打开”进入cmd端口   typora shift+enter 表格中换行   excel ctrl + T：普通表格变成超级表   windows win+R，cmd进入命令面板，regedit进入注">
 <meta property="og:type" content="article">
@@ -56,7 +56,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -249,12 +249,34 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-python_实用操作" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#About-My-Blog"><span class="toc-text">About My Blog</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E5%A6%82%E9%80%86%E6%B0%B4%E8%A1%8C%E8%88%9F%EF%BC%8C%E4%B8%8D%E8%BF%9B%E5%88%99%E9%80%80"><span class="toc-text">学如逆水行舟，不进则退</span></a></li></ol>
+        <h1 class="article-title">python_实用操作</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2022-05-12 19:22:48'>2022-05-13 16:36</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:418</span>
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
     
 <style>
     .left-col .switch-btn,
@@ -267,11 +289,51 @@
     }
 </style>
 </div>
-            <h1 id="About-My-Blog"><a href="#About-My-Blog" class="headerlink" title="About My Blog"></a>About My Blog</h1><h1 id="学如逆水行舟，不进则退"><a href="#学如逆水行舟，不进则退" class="headerlink" title="学如逆水行舟，不进则退"></a>学如逆水行舟，不进则退</h1><p><img src="https://github.com/TreeioView/TreeioView.github.io/tree/main/img/icegirl.jfif" alt="img"></p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>about</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>获得位图：下载图片另存为到桌面，格式为所有文件，在桌面设置重命名，如：xxx.bmp</td>
+</tr>
+<tr>
+<td>查看sublime的空格是否为真实空格：按住鼠标右键拖拉。</td>
+</tr>
+<tr>
+<td>在python中，默认情况下是无法显示中文的，产生中文乱码的原因就是字体的默认设置中并没有中文字体，所以我们只要手动添加中文字体的名称就可以了<br>手动增加如下代码<br>from pylab import *<br>mpl.rcParams[‘font.sans-serif’] &#x3D; [‘SimHei’]<br>上面的方法对于matplotlib是可以用的，但是如果引入了seaborn，就又会出现乱码。</td>
+</tr>
+<tr>
+<td>在cmd命令中，输入”cd &#x2F;d ‘python文件所在文件夹’“”即“cd+空格+&#x2F;d+空格+python文件所在文件夹”即可定位到相应python文件夹。之后只需输入“python+python文件名+调用的语句参数”就能运行相应的python命令。</td>
+</tr>
+<tr>
+<td>加速下载python模块包<br>在不修改配置信息的情况下，我们可以临时使用国内的镜像站来提高下载速度，以使用清华源为例子：<br>pip install -i <a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a> package_name<br>清华的镜像源每五分钟更新一次，大而全，推荐大家使用。国内还有其他镜像源可供选择[3]：<br>清华：<a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>阿里云：<a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>中国科技大学 <a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">https://pypi.mirrors.ustc.edu.cn/simple/</a><br>华中理工大学：<a target="_blank" rel="noopener" href="http://pypi.hustunique.com/">http://pypi.hustunique.com/</a><br>山东理工大学：<a target="_blank" rel="noopener" href="http://pypi.sdutlinux.org/">http://pypi.sdutlinux.org/</a> <br>豆瓣：<a target="_blank" rel="noopener" href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a><br>&gt;&gt;上述资料来源：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/160937471">https://zhuanlan.zhihu.com/p/160937471</a></td>
+</tr>
+<tr>
+<td>pip list （查看所有安装的模块包）</td>
+</tr>
+</tbody></table>
 
-        </article>
-        
-        
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -280,11 +342,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":180,"height":390},"mobile":{"show":true,"scale":0.5},"rect":{"opacity":0.7},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
